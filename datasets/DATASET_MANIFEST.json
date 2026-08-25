@@ -1,0 +1,17 @@
+{
+  "original_datasets": [
+    {"name": "PEMS03", "source": "PEMS03", "included_in_archive": false},
+    {"name": "PEMS04", "source": "PEMS04", "included_in_archive": false},
+    {"name": "PEMS08", "source": "PEMS08", "included_in_archive": false}
+  ],
+  "split_scheme": {
+    "name": "R30",
+    "description": "Final sub-datasets used in the experiments; each split retains the selected 30-node local subgraph and its associated warehouse files.",
+    "split_generation_code_included": false
+  },
+  "included_splits": [
+    "PEMS03-R30-001", "PEMS03-R30-002", "PEMS03-R30-003", "PEMS03-R30-004", "PEMS03-R30-005",
+    "PEMS04-R30-001", "PEMS04-R30-002", "PEMS04-R30-003", "PEMS04-R30-004", "PEMS04-R30-005",
+    "PEMS08-R30-001", "PEMS08-R30-002", "PEMS08-R30-003", "PEMS08-R30-004", "PEMS08-R30-005"
+  ]
+}

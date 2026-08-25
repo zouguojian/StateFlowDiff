@@ -1,0 +1,34 @@
+stateflow_clean_1ep  
+mae: 0.23997312784194946, mse: 0.1094154417514801, rmse: 0.3307800590991974
+CG-CSI: 0.839659
+CG-F1: 0.912842
+CG-HDR: 0.306338
+EDE: 0.234945
+FCE: 0.809813
+FN: 18946.000000
+FP: 18622.000000
+HDR: 0.193591
+Hol-CG-FCE: 1.029693
+Hol-CG-MAE: 0.357230
+Hol-MAE: 0.271752
+Hol-PTE: 2.385891
+Hol-PVE: 0.399024
+Hol-Peak-MAE: 0.360399
+MAE: 0.239973
+MAPE: 2.233980
+MSE: 0.109415
+RMSE: 0.330780
+Reg-CG-MAE: 0.273459
+Reg-MAE: 0.227676
+TP: 196733.000000
+congestion_ratio: 0.512976
+holiday_congestion_ratio: 0.145133
+holiday_ratio: 0.279070
+p_cong_mean: 0.498989
+param_total: 476953
+param_trainable: 476940
+param_frozen: 13
+test_infer_total_seconds: 5.228960953652859
+test_infer_avg_batch_seconds: 0.04053458103606867
+test_num_batches: 129
+
