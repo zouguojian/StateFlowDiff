@@ -294,6 +294,34 @@ For exact reproduction, please use the corresponding YAML file in `configs/`. Th
 
 ---
 
+## Configuration
+
+The key hyperparameters of StateFlowDiff used in the experiments are summarized below.
+
+| Parameter                                                     |                      Value |
+| ------------------------------------------------------------- | -------------------------: |
+| Historical window $L$                                         |                         96 |
+| Prediction horizon $H$                                        |             ${12, 24, 36}$ |
+| Patch length $P$                                              |                         12 |
+| Number of fixed frequency bands $R$                           |                          4 |
+| Diffusion steps $Q$                                           |                        100 |
+| DPM-Solver sampling steps                                     |                          5 |
+| Number of sampled realizations $K$                            |                         20 |
+| Field coupling strength $\lambda_{sf}$                        |                       0.05 |
+| Numerical constant $\varepsilon$                              |                  $10^{-5}$ |
+| Temporal residual initialization $\eta_{\mathrm{time}}^{(0)}$ |                        0.5 |
+| Band residual initialization ${\eta_r^{(0)}}_{r=1}^{R}$       |     $(0.2, 0.5, 1.0, 1.2)$ |
+| Band contribution initialization ${\beta_r^{(0)}}_{r=1}^{R}$  | $(0.15, 0.20, 0.30, 0.35)$ |
+| HTRC mixing coefficient $\alpha_{\mathrm{mix}}$               |                        0.5 |
+| Sample-cloud bandwidth $\kappa_{\mathrm{cloud}}$              |                       15.0 |
+| Historical-state bandwidth $\kappa_{\mathrm{hist}}$           |                       20.0 |
+| Training epochs                                               |                         30 |
+| Batch size                                                    |                         32 |
+| Learning rate                                                 |                  $10^{-3}$ |
+| Random seeds                                                  |            ${0, 42, 2021}$ |
+
+For exact reproduction, please use the corresponding YAML file in `configs/`. The configuration file used for a run should be treated as the authoritative runtime specification.
+
 ## Ablation Studies
 
 Ablation configurations are provided under:
