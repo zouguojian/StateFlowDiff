@@ -269,33 +269,6 @@ The default chronological split follows a `7:1:2` train/validation/test protocol
 
 ## Configuration
 
-Representative configuration groups include:
-
-```yaml
-seq_len: 96
-pred_len: 36
-
-use_lstde: true
-use_sfcn: true
-
-num_bands: 4
-patch_len: 12
-
-diff_steps: 100
-s_steps: 5
-sample_times: 20
-
-test_aggregation_mode: dca
-dca_bandwidth_kde: 15.0
-dca_bandwidth_hist: 20.0
-```
-
-For exact reproduction, please use the corresponding YAML file in `configs/`. The configuration file used for a run should be treated as the authoritative runtime specification.
-
----
-
-## Configuration
-
 The key hyperparameters of StateFlowDiff used in the experiments are summarized below.
 
 | Parameter                                                     |                      Value |
